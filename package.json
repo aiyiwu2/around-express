@@ -1,38 +1,35 @@
 {
   "name": "around-express",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.5.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "anymatch": "^3.1.1",
+    "express": "^4.17.1",
+    "minimist": "^1.2.5",
+    "nopt": "^1.0.10",
+    "normalize-path": "^3.0.0",
+    "normalize-url": "^4.5.0",
+    "p-cancelable": "^1.1.0",
+    "picomatch": "^2.2.2",
+    "prepend-http": "^2.0.0",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiyiwu2/around-express.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aiyiwu2/around-express/issues"
+  },
+  "homepage": "https://github.com/aiyiwu2/around-express#readme"
 }

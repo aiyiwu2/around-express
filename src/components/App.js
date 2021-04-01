@@ -13,7 +13,7 @@ import { CurrentUserContext } from '../contexts/CurrentUserContext.js';
 
 
 function App() {
-	
+
 	const [isEditAvatarOpen, setIsEditAvatarOpen] = React.useState(false);
 	const [isEditProfileOpen, setIsEditProfileOpen] = React.useState(false);
 	const [isAddPlaceOpen, setIsAddPlaceOpen] = React.useState(false);

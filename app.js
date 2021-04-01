@@ -1,5 +1,20 @@
-const http = require('http');
 
-const server = http.createServer(); // setting up a server
+const userRouter = require('./routers/users');
+const cardRouter = require('./routers/cards');
 
-server.listen(3000); // specifying the port for receiving requests
+const app = express();
+const { PORT = 3000 } = process.env;
+
+
+// connect to routers
+app.use('/users', userRouter);
+app.use('/cards', cardRouter);
+
+// requested page doesn't exist
+app.get('*', (req, res) => {
+  res.status(404).send({ message: 'Page not found' });
+});
+
+app.listen(PORT, () => {
+  console.log(`App listening at port ${PORT}`);
+});
